@@ -1,0 +1,103 @@
+.span1{
+    display:flex;
+}
+.span2{
+    display: flex;
+    flex-direction: row;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sec1{
+    background-image: url(../images/beautiful-g0b44ee0ce_1920.jpg);
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    background-position: center;
+}
+ul li a:hover{
+background-color:rgba(254,158,158);
+}
+.text{
+    position: absolute;
+    top: 40%;
+    width:100%;
+    text-align: center;
+    background-color:rgba(254, 254, 254, 0.3);
+}
+.link ul li{
+    display: inline-block;
+}
+.link ul li a{
+    text-decoration: none;
+    color:black;
+    padding: 2px;
+}
+.link ul li a :hover{
+    background-color: rgb(240, 158, 158);
+}
+
+iframe{
+    width: 100%;
+}
+.page a{
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px;
+}
+.spans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.spans1{
+    display: flex;
+    flex-direction: row;
+}
+.marq{
+    border: 1px solid red;
+    box-shadow: 5px 5px 5px darkred;
+}
+.cartNums{
+    position: relative;
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width :600px){
+    .sec1{
+        height: 350px;
+    }
+    .row1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .all23{
+        margin-left: 0;
+    }
+    .spans img{
+        width: 100px;
+    }
+}

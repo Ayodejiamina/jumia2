@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products site</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- font-family: 'Tangerine', serif; -->
+
+    <div class="container-fluid">
+
+        <div class="container-fluid mt-sm-3">
+            <div class=" row1">
+                <div class="  span1">
+                 <i class="fas fa-shopping-cart" style="font-size:40px;color: red;"></i>
+                 <div>
+                 <h3>jumia <span style="color: red;">Shopping</span></h3>
+                 <h6>Your Shopping Partner</h6>
+                 </div>
+                </div>
+                <div class=" span2">
+                 <form>
+                     <input type="text" id="sname" name="sname" placeholder="search here ex man">
+                 </form>
+                     <div>
+                     <i class="fas fa-search" style="color:white; background-color: red; font-size: 30px; background-size: 30px; border-radius: 10%;"></i>
+                 </div>
+                </div>
+                <div class="">
+                 <i class="fas fa-shopping-basket" style="color:red; font-size: 40px;"><span class="cartNums" id="count_item">0</span></i>
+                 <p>SHOPPING CART</p>
+                </div>
+            </div>
+        </div>
+     
+        <div class="container-fluid sticky-top">
+         <nav class="navbar navbar-expand-sm mb-0 rounded-top  ">
+             <div class="container-fluid" style="background-color: red;">
+                 <a  class="navbar-brand"style="color:white; font-size:20px"><img src="images/index.png" alt="" style="width: 100%; height:50px;border-radius:50%;"></a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                     <span class="fas fa-bars" style="color:white"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                 <ul class="nav-bar nav ms-auto">
+                     <li class="nav-item "><a  class="nav-link" href="index.html" style="color: white;">Home</a></li>
+                     <li class="nav-item "><a  class="nav-link" href="blog.html" style="color:white;">Blog</a></li>
+                     <li class="nav-item "><a  class="nav-link" href="contact.html" style="color: white;">Contacts</a></li>
+                     <li class="nav-item "><a  class="nav-link" href="product.html" style="color: white;">Products</a></li>
+                     <li class="nav-item "><a  class="nav-link" href="cart.html" style="color: white;">Carts</a></li>
+     
+                 </ul>
+                   </div>
+             </div>
+         </nav> 
+        </div>
+         <div class="row">
+               <h1 class="text-center" style="color: red;">MEN-WEARS</h1>
+               <div class="col-sm-3">
+               <img src="images/istockphoto-1059394448-612x612.jpg" alt="images/istockphoto-1059394448-612x612.jpg" height="200px" width="100%">
+               <p class="">Men black italian suits</p>
+               <p>#10500</p>
+               <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3">
+                <img src="images/istockphoto-1142213013-612x612.jpg" alt="images/istockphoto-1142213013-612x612.jpg" height="200px" width="100%">
+                <p>Black hoodie.</p>
+                <p>#4989</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+
+               </div>
+               <div class="col-sm-3">
+                <img src="images/istockphoto-1304079521-612x612.jpg" alt="images/istockphoto-1304079521-612x612.jpg" height="200px" width="100%">
+                <p>Kampala hoodie</p>
+                <p>#6500</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3">
+                <img src="images/istockphoto-849125092-170667a.jpg" alt="images/istockphoto-849125092-170667a.jpg" height="200px" width="100%">
+                <p>Complete winter wear</p>
+                <p>#35000</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3 mt-2">
+                <img src="images/istockphoto-1413975378-612x612.jpg" alt="images/istockphoto-1413975378-612x612.jpg" height="200px" width="100%">
+                <p>Summer knicker</p>
+                <p>#5000</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3 mt-2">
+                <img src="images/menswear-952836__340.jpg" alt="images/menswear-952836__340.jpg" height="200px" width="100%">
+                <p>Ostrich skin belt</p>
+                <p>#3000</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3 mt-2">
+                <img src="images/cardigan.jpg" alt="images/cardigan.jpg" height="200px" width="100%">
+                <p>Pink unisex hoodie</p>
+                <p>#5000</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3 mt-2">
+                <img src="images/jeans2.jpg" alt="images/jeans2.jpg" height="200px" width="100%">
+                <p>Navy tattered jean</p>
+                <p>#15000</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               
+               
+        </div>
+
+        <div class="row mt-4">
+            <h1 class="text-center" style="color: red;">WOMEN-WEARS</h1>
+            <div class="col-sm-3">
+            <img src="images1/istockphoto-1213182856-612x612.jpg" alt="images1/istockphoto-1213182856-612x612.jpg" height="200px" width="100%">
+            <p>Plintin skirt</p>
+            <p>#3200</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+            </div>
+            <div class="col-sm-3">
+             <img src="images1/istockphoto-1278845738-612x612.jpg" alt="images1/istockphoto-1278845738-612x612.jpg" height="200px" width="100%">
+             <p>Lap gown</p>
+             <p>#5000</p>
+             <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+            </div>
+            <div class="col-sm-3">
+             <img src="images1/istockphoto-1207156184-612x612.jpg" alt="images1/istockphoto-1207156184-612x612.jpg" height="200px" width="100%">
+             <p>Vibrant jean</p>
+             <p>#7000</p>
+             <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+            </div>
+            <div class="col-sm-3">
+                <img src="images1/istockphoto-1407520128-612x612.jpg" alt="images1/istockphoto-1407520128-612x612.jpg" height="200px" width="100%">
+                <p>Duchet gown</p>
+                <p>#8500</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3 mt-2">
+                <img src="images1/istockphoto-1398610798-612x612.jpg" alt="images1/istockphoto-1398610798-612x612.jpg" height="200px" width="100%">
+                <p>Three-quarter jumpsuit</p>
+                <p>#7000</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3 mt-2">
+                <img src="images1/istockphoto-471922232-612x612.jpg" alt="images1/istockphoto-471922232-612x612.jpg" height="200px" width="100%">
+                <p>Turtle-neck hoodie</p>
+                <p>#4500</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3 mt-2">
+                <img src="images1/istockphoto-1344716112-612x612.jpg" alt="images1/istockphoto-1344716112-612x612.jpg" height="200px" width="100%">
+                <p>Bridal net gown</p>
+                <p>#15000</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+               <div class="col-sm-3 mt-2">
+                <img src="images/fashion-3497410_1920.jpg" alt="images/fashion-3497410_1920.jpg" height="200px" width="100%">
+                <p>Complete office dress</p>
+                <p>#9220</p>
+                <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+               </div>
+            
+            
+     </div>
+     <div class="row mt-4">
+        <h1 class="text-center" style="color: red;">KIDS-WEARS</h1>
+        <div class="col-sm-3">
+            <img src="images1/istockphoto-922696922-612x612.jpg" alt="images1/istockphoto-922696922-612x612.jpg" height="200px" width="100%">
+            <p>Pyjamas</p>
+            <p>#3000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images1/istockphoto-1092747388-612x612.jpg" alt="images1/istockphoto-1092747388-612x612.jpg" height="200px" width="100%">
+            <p>Jean jumpsuit</p>
+            <p>#5000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images1/istockphoto-1208543231-612x612.jpg" alt="images1/istockphoto-1208543231-612x612.jpg" height="200px" width="100%">
+            <p>Complete teddy wears</p>
+            <p>#8000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images1/istockphoto-1296361252-612x612.jpg" alt="images1/istockphoto-1296361252-612x612.jpg" height="200px" width="100%">
+            <p>Jean jacket</p>
+            <p>#4500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <img src="images1/istockphoto-1420660945-612x612.jpg" alt="images1/istockphoto-1420660945-612x612.jpg" height="200px" width="100%">
+            <p>Piccasso shirt</p>
+            <p>#2500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <img src="images1/istockphoto-1343404147-612x612.jpg" alt="images1/istockphoto-1343404147-612x612.jpg" height="200px" width="100%">
+            <p>Panties jean</p>
+            <p>#4500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <img src="images1/istockphoto-1367247191-612x612.jpg" alt="images1/istockphoto-1367247191-612x612.jpg" height="200px" width="100%">
+            <p>Varieties wear</p>
+            <p>#25000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <img src="images1/istockphoto-1330925898-612x612.jpg" alt="images1/istockphoto-1330925898-612x612.jpg" height="200px" width="100%">
+            <p>Sari gown</p>
+            <p>#6500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+     </div>
+     <div class="row mt-4">
+        <h1 class="text-center" style="color: red;">FOOT-WEARS</h1>
+        <div class="col-sm-3">
+            <img src="images1/istockphoto-1325195703-612x612.jpg" alt="images1/istockphoto-1325195703-612x612.jpg" height="200px" width="100%">
+            <p>Sneakers</p>
+            <p>#10500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images1/istockphoto-1386931019-612x612.jpg" alt="images1/istockphoto-1386931019-612x612.jpg" height="200px" width="100%">
+            <p>Kids badaan shoes</p>
+            <p>#7000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images1/istockphoto-1351552053-612x612.jpg" alt="images1/istockphoto-1351552053-612x612.jpg" height="200px" width="100%">
+            <p>Sport canvas</p>
+            <p>#6500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images1/istockphoto-1392145683-612x612.jpg" alt="images1/istockphoto-1392145683-612x612.jpg" height="200px" width="100%">
+            <p>Black badaan canvas</p>
+            <p>#10500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <img src="images/andres-jasso-PqbL_mxmaUE-unsplash.jpg" alt="images/andres-jasso-PqbL_mxmaUE-unsplash.jpg" height="200px" width="100%">
+            <p>Andres-jasso sneakers</p>
+            <p>#67000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <img src="images/luis-felipe-lins-J2-wAQDckus-unsplash.jpg" alt="images/luis-felipe-lins-J2-wAQDckus-unsplash.jpg" height="200px" width="100%">
+            <p>Luis-fellipe Sneakers</p>
+            <p>#14700</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <img src="images/marcus-lewis-87DgFV9SOc4-unsplash.jpg" alt="images/marcus-lewis-87DgFV9SOc4-unsplash.jpg" height="200px" width="100%">
+            <p>Marcus-lewis pointed heels</p>
+            <p>#56100</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3 mt-2">
+            <img src="images/fashion-601565__340.jpg" alt="images/fashion-601565__340.jpg" height="200px" width="100%">
+            <p>Office shoe</p>
+            <p>#20500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+     </div>
+     <div class="row mt-4">
+        <h1 class="text-center" style="color: red;">BAGS</h1>
+        <div class="col-sm-3">
+            <img src="images/trinh-minh-th-twN2viFvWd0-unsplash.jpg" alt="images/trinh-minh-th-twN2viFvWd0-unsplash.jpg" height="200px" width="100%">
+            <p>trinh-minh complete set</p>
+            <p>#67800</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/diana-light-nvQemFKRBUo-unsplash.jpg" alt="images/diana-light-nvQemFKRBUo-unsplash.jpg" height="200px" width="100%">
+            <p>Ostrich navy leather bag</p>
+            <p>#25000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/creative-headline-APNnyM36puU-unsplash.jpg" alt="images/creative-headline-APNnyM36puU-unsplash.jpg" height="200px" width="100%">
+            <p>Headline leather bag</p>
+            <p>#12000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/aurelia-dubois-xzrJCS4grC4-unsplash.jpg" alt="images/aurelia-dubois-xzrJCS4grC4-unsplash.jpg" height="200px" width="100%">
+            <p>Aurelia leather bag</p>
+            <p>#15000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+     </div>
+     <div class="row mt-4">
+        <h1 class="text-center" style="color: red;">JEWELLRIES</h1>
+        <div class="col-sm-3">
+            <img src="images/ring-653434_1920.jpg" alt="images/ring-653434_1920.jpg" height="200px" width="100%">
+            <p>Golden ring</p>
+            <p>#68000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/photo-1530784199-de226bc25605.jpeg" alt="images/photo-1530784199-de226bc25605.jpeg" height="200px" width="100%">
+            <p>Wrist-watch</p>
+            <p>#10000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/jewelry-618429_1920.jpg" alt="images/jewelry-618429_1920.jpg" height="200px" width="100%">
+            <p>Complete set Jewellries</p>
+            <p>#50000</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/stainless-878359_1920.jpg" alt="images/stainless-878359_1920.jpg" height="200px" width="100%">
+            <p>Ketina bangles</p>
+            <p>#12500</p>
+            <button class="btn btn-danger" onclick="addCart(this)">Add to cart</button>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="local.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
